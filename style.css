@@ -107,7 +107,12 @@
 
 html,
 body {
-  background-color: rgba(210, 228, 175, 0.911);
+  margin: 0;
+  padding: 0;
+  background: url(./Pics/Window\ xp.jpg);
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 .container {
   padding: 10px;
@@ -190,7 +195,7 @@ a:hover {
   text-align: center;
   line-height: 1;
   padding: 9px 4px;
-  background-color: #03a9f4;
+
   border-radius: 50%;
   transition: 0.3s ease all;
 }
@@ -224,7 +229,6 @@ a:hover {
   display: flex;
 }
 .List {
-  background-color: #03a9f4;
   grid-area: List;
   border: 1px solid;
 }
