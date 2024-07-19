@@ -1,0 +1,74 @@
+html,
+body {
+  background-color: rgba(210, 228, 175, 0.911);
+}
+.container {
+  padding: 10px;
+}
+h1 {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+}
+h2 {
+  font-size: 170%;
+}
+.header,
+nav {
+  position: sticky;
+  padding: 0px;
+  text-align: left;
+  background-color: aqua;
+  width: 100vw;
+  height: 20vh;
+  margin-top: 0;
+}
+.menu {
+  display: inline-block;
+  margin-left: 20px;
+  text-align: left;
+  text-decoration: none;
+  font-size: larger;
+}
+.nav {
+  margin-left: 650px;
+  align-items: center;
+  opacity: 50%;
+  height: 80px;
+}
+.logo {
+  border-radius: 10px;
+}
+.Contact {
+  margin-left: 19px;
+}
+.Contact__1 {
+  margin-right: 20px;
+  text-decoration: none;
+}
+.Contact__2 {
+  text-decoration: none;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.356);
+}
+/* Button 2 */
+#button-2 .knobs:before,
+#button-2 .knobs:after {
+  content: "YES";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 10px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: #03a9f4;
+  border-radius: 50%;
+  transition: 0.3s ease all;
+}
