@@ -2,10 +2,19 @@
   margin: 0;
   padding: 0;
 }
-@media (max-width: 600px) {
- .List{transform: translate(-103px,0px);
-    -webkit-transform: translate(-103px,0px);
-    -moz-transform: translate(-103px,0px);}
+@media (max-width: 599.8px) {
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: #00aaff;
+    padding: 10px;
   }
-  .container{margin-left: -50px;}
+  .logo img {
+    height: 50px;
+    margin-right: 20px;
+  }
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

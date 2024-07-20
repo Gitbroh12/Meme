@@ -25,6 +25,11 @@ h2 {
   border: 1px solid;
 }
 
+.menulist {
+  display: none;
+  margin-left: 5px;
+  height: 15px; /* Adjust menu icon size */
+}
 .logo {
   background-color: #03a9f4;
   border-radius: 10px;
@@ -134,6 +139,7 @@ a:hover {
   display: flex;
 }
 .List {
+  margin-right: 70px;
   border: 1px solid;
 }
 .Foot {
