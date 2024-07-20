@@ -1,115 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Default Design */
-.gfg-div {
-  /* To make all elements center */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  /* Default Styling */
-  margin: 20px auto;
-  padding: 30px;
-  font-size: 30px;
-  width: 300px;
-  height: 300px;
-  background-color: darkseagreen;
-  color: black;
-}
-
-/* For Desktop View */
-@media screen and (min-width: 1024px) {
-  .gfg-div {
-    background-color: #63c971;
-    color: #fff;
-  }
-}
-
-/* For Tablet View */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .gfg-div {
-    width: 400px;
-    height: 400px;
-    background-color: orange;
-    color: black;
-    font-size: smaller;
-  }
-}
-
-/* For Mobile Portrait View */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-  .gfg-div {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    color: #fff;
-    font-size: smaller;
-  }
-}
-
-/* For Mobile Landscape View */
-@media screen and (max-device-width: 640px) and (orientation: landscape) {
-  .gfg-div {
-    width: 400px;
-    height: 200px;
-    background-color: cyan;
-    color: black;
-    font-size: smaller;
-  }
-}
-
-/* For Mobile Phones Portrait or Landscape View */
-@media screen and (max-device-width: 640px) {
-  .gfg-div {
-    width: 400px;
-    height: 200px;
-    background-color: chartreuse;
-    color: black;
-    font-size: smaller;
-  }
-}
-
-/* For iPhone 4 Portrait or Landscape View */
-@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-  .gfg-div {
-    width: 400px;
-    height: 400px;
-    background-color: brown;
-    color: black;
-    font-size: smaller;
-  }
-}
-
-/* For iPhone 5 Portrait or Landscape View */
-@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-  .gfg-div {
-    width: 400px;
-    height: 400px;
-    background-color: rgb(165, 183, 216);
-    color: black;
-    font-size: smaller;
-  }
-}
-
-/* For iPhone 6 and 6 plus Portrait or Landscape View */
-@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
-  .gfg-div {
-    width: 400px;
-    height: 400px;
-    background-color: darkgoldenrod;
-    color: black;
-    font-size: smaller;
-  }
-}
-
 html,
 body {
   margin: 0;
   padding: 0;
-  background: url(./Pics/Window\ xp.jpg);
+  background: url(./Pics/OIP.jfif);
   background-size: cover; /* Ensures the image covers the entire background */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -201,20 +94,32 @@ a:hover {
 }
 .megacontainer {
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 2.5fr 0.3fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
   gap: 0px 15px;
-  grid-template-areas:
-    "Heading Heading Heading Heading"
-    "List Main Main Main"
-    "Foot Foot Foot Foot";
+  grid-auto-flow: column;
   justify-content: stretch;
   align-content: stretch;
   justify-items: stretch;
   align-items: stretch;
+  grid-template-areas:
+    "Heading Heading Heading Heading"
+    "Main Main Main Main"
+    "Foot Foot Foot Foot";
+}
+
+.Heading {
+  grid-area: Heading;
+}
+
+.Foot {
+  grid-area: Foot;
+}
+
+.Main {
+  grid-area: Main;
 }
 
 .Heading {
@@ -229,14 +134,16 @@ a:hover {
   display: flex;
 }
 .List {
-  grid-area: List;
   border: 1px solid;
 }
 .Foot {
   border: 1px solid;
   grid-area: Foot;
 }
-
+.container {
+  margin-left: 20px;
+}
 .Main {
+  display: flex;
   grid-area: Main;
 }
