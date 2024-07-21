@@ -153,3 +153,24 @@ a:hover {
   display: flex;
   grid-area: Main;
 }
+.List__mobile {
+  justify-content: left;
+  display: none;
+}
+.list__name1__mobile,
+.list__name2__mobile,
+.list__name3__mobile,
+.list__name4__mobile,
+.list__name5__mobile,
+.list__name6__mobile,
+.list__name7__mobile,
+.list__name8__mobile {
+  display: inline;
+  font-size: 150%;
+  text-decoration: none;
+  color: chartreuse;
+  margin-left: 10px;
+}
+.Label {
+  display: none;
+}
